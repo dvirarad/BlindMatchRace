@@ -1,12 +1,22 @@
 package com.blindmatchrace;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.Locale;
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+<<<<<<< HEAD
+=======
+import com.blindmatchrace.classes.C;
+import com.blindmatchrace.classes.SendDataHThread;
+import com.blindmatchrace.modules.JsonReader;
+
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
@@ -18,7 +28,10 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Process;
+<<<<<<< HEAD
 import android.speech.tts.TextToSpeech;
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -30,10 +43,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.blindmatchrace.classes.C;
 import com.blindmatchrace.classes.SendDataHThread;
 import com.blindmatchrace.modules.JsonReader;
 
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 /**
  * Login activity. Allows the user to log in or register to DB.
  *
@@ -65,7 +81,10 @@ public class LoginActivity extends Activity {
 	private View llLoginStatus;
 	private TextView tvLoginStatusMessage;
 
+<<<<<<< HEAD
 	private  TextToSpeech tts;
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -99,6 +118,7 @@ public class LoginActivity extends Activity {
 			startActivity(intent);
 			finish();
 		}
+<<<<<<< HEAD
 		else {
 			//DVIR --> text to speck massage
 			tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -113,6 +133,8 @@ public class LoginActivity extends Activity {
 				}
 			});
 		}
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 	}
 
 	/**

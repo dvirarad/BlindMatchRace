@@ -1,7 +1,10 @@
 package com.blindmatchrace;
 
+<<<<<<< HEAD
 import java.util.Locale;
 
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 import com.blindmatchrace.classes.C;
 import com.blindmatchrace.classes.SaveKmlTask;
 
@@ -12,7 +15,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+<<<<<<< HEAD
 import android.speech.tts.TextToSpeech;
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
@@ -31,8 +37,11 @@ public class MenuActivity extends Activity implements OnClickListener {
 	// Views.
 	private Button bMap, bKml1, bKml2, bLogout, bExit;
 
+<<<<<<< HEAD
 	
 	private TextToSpeech tts;
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -56,6 +65,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 		event = getIntent().getStringExtra(C.EVENT_NUM);
 		fullUserName = user + "_" + pass + "_" + event;
 
+<<<<<<< HEAD
 		//DVIR --> text to speck massage
 		tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
 
@@ -70,6 +80,8 @@ public class MenuActivity extends Activity implements OnClickListener {
 		});
 		
 		
+=======
+>>>>>>> 34f45fc19286b905b48432e132628d67a2c720e8
 		// Initializing Buttons.
 		bMap = (Button) findViewById(R.id.bMap);
 		bKml1 = (Button) findViewById(R.id.bKml1);

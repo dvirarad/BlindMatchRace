@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 <<<<<<< HEAD
-=======
+=====
 import com.blindmatchrace.classes.C;
 import com.blindmatchrace.classes.SendDataHThread;
 import com.blindmatchrace.modules.JsonReader;
@@ -228,7 +228,7 @@ public class LoginActivity extends Activity {
 		}
 
 		// Check for a valid user.
-		if (mUser.equalsIgnoreCase(C.SAILOR_PREFIX)) {
+		if (mUser.equals(C.SAILOR_PREFIX)) {
 			etUser.setError(getString(R.string.error_field_required));
 			focusView = etUser;
 			cancel = true;

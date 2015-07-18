@@ -86,8 +86,19 @@ public class MenuActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onBackPressed() {
-		super.onBackPressed();
-		finish();
+		/*super.onBackPressed();
+		finish();*/
+		new AlertDialog.Builder(this)
+		.setTitle("Really Exit?")
+		.setMessage("Are you sure you want to exit?")
+		.setNegativeButton(android.R.string.no, null)
+		.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+			public void onClick(DialogInterface arg0, int arg1) {
+				MenuActivity.super.onBackPressed();
+				finish();
+			}
+		}).create().show();
 	}
 
 	@Override

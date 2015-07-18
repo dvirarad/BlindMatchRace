@@ -147,11 +147,25 @@ public class AdminActivity extends FragmentActivity implements LocationListener,
 
 	@Override
 	public void onBackPressed() {
-		super.onBackPressed();
+		/*super.onBackPressed();
 
 		// Disables the location changed code.
 		disableLocation = true;
-		finish();
+		finish();*/
+		new AlertDialog.Builder(this)
+		.setTitle("Really Exit?")
+		.setMessage("Are you sure you want to exit?")
+		.setNegativeButton(android.R.string.no, null)
+		.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+			public void onClick(DialogInterface arg0, int arg1) {
+				AdminActivity.super.onBackPressed();
+
+				// Disables the location changed code.
+				disableLocation = true;
+				finish();
+			}
+		}).create().show();
 	}
 
 	@Override
